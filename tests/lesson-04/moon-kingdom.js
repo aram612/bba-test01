@@ -109,12 +109,12 @@ function printLeaderboardOp3(playersOp3) {
     playersOp3.sort((a, b) => b.score - a.score);
 
     let index = 0;
-    for (let i in playersOp3) {
+    for (let p of playersOp3) {
         let medal = '  ';
         if (index < 3) {
             medal = topMedal[index];
         }
-        console.log(`${medal} ${index + 1}. ${playersOp3[index].name} - ${playersOp3[index].score}`);
+        console.log(`${medal} ${index + 1}. ${p.name} - ${p.score}`);
         index++;
     };
 }
