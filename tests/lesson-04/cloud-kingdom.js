@@ -8,10 +8,10 @@ const coinsLevel = {
 
 // Cách 1
 const avgCoin = (coinsLevel.level1 + coinsLevel.level2 + coinsLevel.level3) / 3;
-console.log(avgCoin);
+console.log(`Số coin trung bình là: ${avgCoin}`);
 
 const coinRemainder = (coinsLevel.level1 + coinsLevel.level2 + coinsLevel.level3) % 3;
-console.log(coinRemainder);
+console.log(`Số coin dư là: ${coinRemainder}`);
 
 // Cách 2
 const coinsLevel1 = 25;
@@ -19,16 +19,16 @@ const coinsLevel2 = 30;
 const coinsLevel3 = 45;
 
 console.log(`\n`);
-console.log((coinsLevel1 + coinsLevel2 + coinsLevel3) / 3);
-console.log((coinsLevel1 + coinsLevel2 + coinsLevel3) % 3);
+console.log(`Số coin trung bình là: ${(coinsLevel1 + coinsLevel2 + coinsLevel3) / 3}`);
+console.log(`Số coin dư là: ${(coinsLevel1 + coinsLevel2 + coinsLevel3) % 3}`);
 
 // Cách 3
 
 const coinsLevelMath = [25, 30, 45];
 
 console.log(`\n`);
-console.log((coinsLevelMath[0] + coinsLevelMath[1] + coinsLevelMath[2]) / 3);
-console.log((coinsLevelMath[0] + coinsLevelMath[1] + coinsLevelMath[2]) % 3);
+console.log(`Số coin trung bình là: ${(coinsLevelMath[0] + coinsLevelMath[1] + coinsLevelMath[2]) / 3}`);
+console.log(`Số coin trung bình là: ${(coinsLevelMath[0] + coinsLevelMath[1] + coinsLevelMath[2]) % 3}`);
 
 // Cách 4
 function coinsLevelArr(level1, level2, level3) {
@@ -40,8 +40,8 @@ function coinsLevelArr(level1, level2, level3) {
 const coinsArr = coinsLevelArr(25, 30, 45);
 
 console.log(`\n`);
-console.log(coinsArr[0]);
-console.log(coinsArr[1]);
+console.log(`Số coin trung bình là: ${coinsArr[0]}`);
+console.log(`Số coin trung bình là: ${coinsArr[1]}`);
 
 // Cách 5
 function coinsLevelObj(level1, level2, level3) {
@@ -56,5 +56,5 @@ coinsObj.avg = coinsReturn.avg;
 coinsObj.remainder = coinsReturn.remainder;
 
 console.log(`\n`);
-console.log(coinsObj.avg);
-console.log(coinsObj.remainder);
+console.log(`Số coin trung bình là: ${coinsObj.avg}`);
+console.log(`Số coin trung bình là: ${coinsObj.remainder}`);
